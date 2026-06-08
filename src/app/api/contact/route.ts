@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const RECIPIENTS = ["info@evocrea.online", "mohammadswedan2003@gmail.com"];
 
 export async function POST(req: NextRequest) {
@@ -63,7 +61,7 @@ export async function POST(req: NextRequest) {
       </div>
     `;
 
-    await resend.emails.send({
+    await new Resend(process.env.RESEND_API_KEY).emails.send({
       from: "EvoCrea Contact <onboarding@resend.dev>",
       to: RECIPIENTS,
       replyTo: safeData.email,
