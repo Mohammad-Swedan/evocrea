@@ -1,26 +1,285 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ─── Design Tokens ─────────────────────────────────────────── */
+@theme {
+  /* ── Light surface scale (paper) */
+  --color-paper: #f3f1ec;
+  --color-surface: #ffffff;
+  --color-raised: #ebe8e1;
+  --color-border: #d9d6cf;
+  --color-border-strong: #b8b4ac;
+
+  /* ── Ink scale (text) */
+  --color-ink: #0c0b0a;
+  --color-ink-2: #2a2825;
+  --color-ink-3: #6b6862;
+  --color-ink-4: #9a968d;
+
+  /* ── Inverse (dark surfaces) */
+  --color-ink-deep: #0c0b0a;
+  --color-ink-soft: #1a1816;
+
+  /* ── Accent — ember orange */
+  --color-accent: #ff5c28;
+  --color-accent-dim: #e04a18;
+  --color-accent-tint: #ffe8df;
+  --color-accent-glow: rgba(255, 92, 40, 0.35);
+
+  /* ── Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-2xl: 28px;
+
+  /* ── Shadows */
+  --shadow-xs: 0 1px 2px rgba(10, 10, 10, 0.06);
+  --shadow-sm:
+    0 2px 8px rgba(10, 10, 10, 0.08), 0 1px 2px rgba(10, 10, 10, 0.04);
+  --shadow-md:
+    0 8px 24px rgba(10, 10, 10, 0.1), 0 2px 6px rgba(10, 10, 10, 0.06);
+  --shadow-lg:
+    0 20px 48px rgba(10, 10, 10, 0.14), 0 4px 12px rgba(10, 10, 10, 0.06);
+  --shadow-glow: 0 0 80px -10px rgba(255, 92, 40, 0.45);
+
+  /* ── Fonts */
+  --font-sans:
+    var(--font-geist), var(--font-inter), "Segoe UI", system-ui, sans-serif;
+  --font-mono:
+    var(--font-geist-mono), "Geist Mono", "Fira Code", ui-monospace, monospace;
+  --font-arabic:
+    var(--font-arabic-ibm), "Cairo", "Segoe UI", system-ui, sans-serif;
+  --font-display:
+    var(--font-fraunces), "Fraunces", Georgia, "Times New Roman", serif;
+
+  /* ── Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-expo: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ─── Utilities ─────────────────────────────────────────────── */
+@utility section-padding {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+@utility tap-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+@utility accent-text {
+  color: var(--color-accent);
+}
+@utility hairline {
+  border: 1px solid var(--color-border);
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+  font-feature-settings: "ss01", "ss02";
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+@utility text-pretty {
+  text-wrap: pretty;
+}
+
+@utility glass {
+  background: color-mix(in srgb, var(--color-surface) 65%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+@utility glass-dark {
+  background: color-mix(in srgb, var(--color-ink-deep) 55%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+
+@utility display-heading {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  font-feature-settings: "ss01", "ss02";
+}
+
+@utility mask-reveal {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+/* ─── Animations ────────────────────────────────────────────── */
+@keyframes marquee-x {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.marquee-track {
+  display: inline-flex;
+  gap: 4rem;
+  white-space: nowrap;
+  animation: marquee-x 40s linear infinite;
+  will-change: transform;
+}
+.marquee-track.fast {
+  animation-duration: 22s;
+}
+.marquee-track.slow {
+  animation-duration: 60s;
+}
+.marquee-track.reverse {
+  animation-direction: reverse;
+}
+
+@keyframes ember-sweep {
+  from {
+    transform: translate3d(-101%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* ─── Base Styles ───────────────────────────────────────────── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    /* Offset fixed nav when jumping to in-page anchors */
+    scroll-padding-top: 6rem;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    line-height: 1.6;
+    /* Avoid sticky-CTA bar overlapping the bottom of the page on mobile */
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* On mobile, leave room for the sticky CTA bar so the footer/last
+     section remains reachable without occlusion. md: keeps zero. */
+  @media (max-width: 767.98px) {
+    body {
+      padding-bottom: calc(env(safe-area-inset-bottom) + 4.5rem);
+    }
+  }
+
+  /* Inputs default to 16px on mobile to prevent iOS zoom-on-focus */
+  @media (max-width: 767.98px) {
+    input,
+    textarea,
+    select {
+      font-size: 16px;
+    }
+  }
+
+  html[dir="rtl"] body {
+    font-family: var(--font-arabic);
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-paper);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border-strong);
+    border-radius: 4px;
+    border: 2px solid var(--color-paper);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-ink-3);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    z-index: 999;
+    padding: 0.5rem 1rem;
+    background: var(--color-ink);
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+  .skip-link:focus {
+    top: 1rem;
+  }
+
+  /* Hide native cursor when custom cursor is active (desktop only) */
+  html.has-custom-cursor,
+  html.has-custom-cursor * {
+    cursor: none !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .marquee-track {
+      animation: none !important;
+    }
+  }
+}
+
+/* ─── Page-level grain overlay ──────────────────────────────── */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.06;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
 }

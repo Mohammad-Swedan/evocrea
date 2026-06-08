@@ -1,0 +1,280 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "showroom": "Showroom",
+    "about": "About",
+    "contact": "Contact",
+    "requestDemo": "Request Demo",
+    "bookCall": "Call Us",
+    "callUs": "Call Us"
+  },
+  "loader": {
+    "tagline": "Building the future of your business…"
+  },
+  "hero": {
+    "headline": "Turn Your Business Into a Smart System",
+    "subheadline": "We build powerful digital systems — CRM platforms, automation, e-commerce, and custom software that transform how your business operates and grows.",
+    "cta": "Request a Demo",
+    "secondaryCta": "Explore Our Systems",
+    "microProof": "Free 30-min strategy call · No commitment · Same-week availability",
+    "sectionLabel": "(01) — Software Studio · Est. 2022",
+    "location": "Irbid, Jordan · Worldwide",
+    "scrollHint": "Scroll to explore",
+    "statSystems": "Systems built",
+    "statRevenue": "Revenue generated",
+    "statSatisfaction": "Client satisfaction",
+    "marqueeWords": [
+      "CRM",
+      "Automation",
+      "E-commerce",
+      "E-learning",
+      "Custom Software",
+      "Integrations",
+      "Workflows"
+    ]
+  },
+  "trustedBy": {
+    "label": "Trusted by teams shipping in",
+    "industries": [
+      "Retail",
+      "Healthcare",
+      "Education",
+      "Logistics",
+      "Real Estate",
+      "Fintech",
+      "Hospitality",
+      "Manufacturing",
+      "D2C Brands"
+    ]
+  },
+  "whatWeDo": {
+    "title": "What We Build",
+    "subtitle": "Powerful digital systems tailored to your business goals",
+    "sectionLabel": "(02) — What we build",
+    "hoverHint": "Hover to preview",
+    "crm": {
+      "title": "CRM Systems",
+      "description": "Manage customers, automate follow-ups, and close more deals with a smart CRM built specifically for your business."
+    },
+    "ecommerce": {
+      "title": "E-commerce Platforms",
+      "description": "Sell more with a high-performing online store — custom-built for scale, speed, and maximum conversions."
+    },
+    "elearning": {
+      "title": "E-learning Systems",
+      "description": "Train your teams, sell courses, and build a knowledge business with a modern, engaging learning platform."
+    },
+    "custom": {
+      "title": "Custom Software",
+      "description": "Whatever your business needs — we design, build, and deliver software that fits your exact processes."
+    }
+  },
+  "showroom": {
+    "title": "Our Work",
+    "subtitle": "Real systems. Real results.",
+    "heroAccent": "Real results.",
+    "heroSuffix": "A selection of digital systems we\u2019ve built with founders, marketers, and ops teams across MENA.",
+    "viewCase": "View Case Study",
+    "viewAll": "View All Projects",
+    "sectionLabel": "(03) — Selected work"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "From idea to a running system — in three focused steps",
+    "sectionLabel": "(04) — Process",
+    "stepLabel": "Step",
+    "step1": {
+      "number": "01",
+      "title": "We Understand Your Business",
+      "description": "Deep discovery session to map your processes, goals, and the biggest opportunities for growth.",
+      "detail": "1–2 weeks · Discovery",
+      "d1": "Stakeholder interviews",
+      "d2": "System architecture",
+      "d3": "Roadmap & timeline"
+    },
+    "step2": {
+      "number": "02",
+      "title": "We Build Your System",
+      "description": "Custom-designed and built for your exact needs — no templates, no compromises, no shortcuts.",
+      "detail": "Build · Iterate · Ship",
+      "d1": "Weekly working demos",
+      "d2": "Production-grade engineering",
+      "d3": "Live launch & QA"
+    },
+    "step3": {
+      "number": "03",
+      "title": "You Scale and Grow",
+      "description": "Launch your system, optimize with data, and scale confidently knowing your tech grows with you.",
+      "detail": "Ongoing · Optimize · Scale",
+      "d1": "Real-time analytics",
+      "d2": "Continuous optimization",
+      "d3": "24/7 monitoring"
+    }
+  },
+  "benefits": {
+    "title": "Why EvoCrea",
+    "subtitle": "Built for businesses that want to move fast and grow smart",
+    "sectionLabel": "(05) — Why EvoCrea",
+    "phrase1": "Built to scale",
+    "phrase2": "Engineered to last",
+    "phrase3": "Designed to convert",
+    "phrase4": "Tuned for speed",
+    "saveTime": {
+      "title": "Save Time",
+      "description": "Automate repetitive tasks and free your team to focus on high-value, strategic work.",
+      "stat": "80%",
+      "statLabel": "of manual tasks automated"
+    },
+    "increaseRevenue": {
+      "title": "Increase Revenue",
+      "description": "Convert more leads, retain customers longer, and unlock powerful new revenue streams.",
+      "stat": "3x",
+      "statLabel": "average revenue growth"
+    },
+    "automate": {
+      "title": "Automate Operations",
+      "description": "Run your business on autopilot with smart workflows, triggers, and deep integrations.",
+      "stat": "24/7",
+      "statLabel": "your systems never sleep"
+    },
+    "experience": {
+      "title": "Better Customer Experience",
+      "description": "Deliver exceptional digital experiences that build lasting loyalty and drive referrals.",
+      "stat": "95%",
+      "statLabel": "client satisfaction rate"
+    }
+  },
+  "cta": {
+    "headline": "Ready to Build Your System?",
+    "subheadline": "Join forward-thinking businesses that run on EvoCrea-built systems.",
+    "sectionLabel": "(06) — Let's build",
+    "button": "Book Free Demo",
+    "callUs": "Call Us",
+    "bookCall": "Call Us",
+    "talkToUs": "Talk to Us",
+    "sendMessage": "Send a Message",
+    "microProof": "30-min · Free · Same-week slots available"
+  },
+  "mobileBar": {
+    "book": "Call Us",
+    "contact": "Contact",
+    "call": "Call"
+  },
+  "contact": {
+    "title": "Request a Demo",
+    "subtitle": "Tell us about your business and we'll show you exactly what we can build.",
+    "sectionLabel": "(07) — Get in touch",
+    "channelEmail": "Email us",
+    "channelWhatsapp": "WhatsApp",
+    "channelCall": "Call us",
+    "name": "Your Name",
+    "email": "Your Email",
+    "company": "Company Name",
+    "message": "Tell us about your business",
+    "send": "Send Request",
+    "sending": "Sending…",
+    "success": "Request sent! We'll be in touch within 24 hours.",
+    "successBody": "We’ll review your request and get back to you within 24 hours with a tailored proposal.",
+    "error": "Something went wrong. Please try again."
+  },
+  "footer": {
+    "tagline": "Building the future of business — one system at a time.",
+    "legal": "© 2025 EvoCrea. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "company": "Company",
+    "services": "Services",
+    "resources": "Resources"
+  },
+  "caseStudy": {
+    "problem": "The Challenge",
+    "solution": "Our Solution",
+    "results": "The Results",
+    "backToShowroom": "Back to Showroom",
+    "nextProject": "Next Project",
+    "prevProject": "Previous Project",
+    "keyMetrics": "Key Metrics",
+    "industry": "Industry",
+    "timeline": "Timeline"
+  },
+  "aboutPage": {
+    "heroLine1": "We build the systems",
+    "heroLine2": "that move",
+    "heroAccent": "businesses forward.",
+    "heroSubtext": "EvoCrea was founded with one belief: businesses in the Arab world deserve digital infrastructure as powerful as any in Silicon Valley \u2014 built for their language, culture, and scale.",
+    "stat0": "Systems delivered",
+    "stat1": "Revenue generated",
+    "stat2": "Client retention",
+    "stat3": "Industries served",
+    "principlesLabel": "(01) \u2014 Principles",
+    "principlesHeadline": "What we stand",
+    "principlesAccent": "for.",
+    "ctaHeadline": "Ready to build",
+    "ctaAccent": "together?",
+    "ctaSecondary": "Send a message",
+    "value0Title": "Outcome-first thinking",
+    "value0Body": "We don\u2019t measure success by features shipped. We measure it by the revenue you gain and the problems we eliminate.",
+    "value1Title": "Speed without sacrifice",
+    "value1Body": "Enterprise quality shouldn\u2019t take years. Our proven frameworks let us move fast while keeping your systems rock-solid.",
+    "value2Title": "Embedded partnership",
+    "value2Body": "We work with you, not just for you. Our team becomes an extension of yours \u2014 transparent, collaborative, fully invested.",
+    "value3Title": "Built for the region",
+    "value3Body": "Deep understanding of MENA markets, RTL UX, local payment gateways, and Arab business culture built into everything we ship."
+  },
+  "servicesPage": {
+    "heroLine1": "Systems that pay for",
+    "heroAccent": "themselves.",
+    "heroSubtext": "We don\u2019t build features. We build revenue engines \u2014 custom platforms designed around your business model, your customers, and your growth targets.",
+    "notSureLabel": "Not sure which fits?",
+    "ctaHeadline": "Let\u2019s figure it out",
+    "ctaAccent": "together.",
+    "ctaSubtext": "Book a free 30-minute strategy session. We\u2019ll map exactly what you need \u2014 no pressure, no jargon.",
+    "ctaSecondary": "Send a message",
+    "crm": {
+      "title": "Custom CRM Systems",
+      "subtitle": "Know every customer. Close every deal.",
+      "f0": "Lead scoring & pipeline automation",
+      "f1": "Multi-branch / multi-team dashboards",
+      "f2": "WhatsApp & email integration",
+      "f3": "Sales analytics & forecasting",
+      "f4": "Custom reporting engine",
+      "cta": "See CRM case study"
+    },
+    "ecommerce": {
+      "title": "E-commerce Platforms",
+      "subtitle": "Sell faster. Convert more. Scale without limits.",
+      "f0": "Sub-1s page load optimization",
+      "f1": "One-click checkout for returning buyers",
+      "f2": "AI-powered product recommendations",
+      "f3": "Loyalty & rewards engine",
+      "f4": "Real-time inventory sync",
+      "cta": "See e-commerce case study"
+    },
+    "elearning": {
+      "title": "E-learning Platforms",
+      "subtitle": "Teach the world. Automate the operations.",
+      "f0": "Video streaming with progress tracking",
+      "f1": "Automated certificate generation",
+      "f2": "B2B enterprise client portal",
+      "f3": "Integrated course sales & payments",
+      "f4": "Learner analytics dashboard",
+      "cta": "See e-learning case study"
+    },
+    "custom": {
+      "title": "Custom Digital Systems",
+      "subtitle": "If it needs to be built, we build it.",
+      "f0": "Bespoke web & mobile applications",
+      "f1": "API design & third-party integrations",
+      "f2": "Workflow & process automation",
+      "f3": "Internal tools & admin portals",
+      "f4": "Legacy system modernization",
+      "cta": "Start a project"
+    }
+  },
+  "contactPage": {
+    "heroLine1": "Let\u2019s build something",
+    "heroAccent": "great.",
+    "heroSubtext": "Send us a message and we\u2019ll get back to you within 24 hours with a tailored proposal \u2014 no commitment required."
+  }
+}
