@@ -76,16 +76,18 @@ export default function FooterInner() {
         <div className="md:col-span-4">
           <Link
             href={`/${locale}`}
-            className="inline-flex items-center gap-1 mb-4"
+            className="inline-flex items-center gap-2.5 mb-4"
           >
             <Image
-              src="/logo-evocrea-without-background.png"
+              src="/mark-evocrea-light.svg"
               alt="EvoCrea"
-              width={120}
-              height={40}
-              className="h-10 w-auto"
-              style={{ filter: "brightness(0) invert(1)" }}
+              width={106}
+              height={120}
+              className="h-12 w-auto"
             />
+            <span className="text-2xl font-semibold tracking-tight text-paper">
+              EvoCrea<span className="text-accent">.</span>
+            </span>
           </Link>
           <p className="text-sm text-paper/60 leading-relaxed max-w-xs">
             We build the digital systems that businesses run on. CRM, commerce,

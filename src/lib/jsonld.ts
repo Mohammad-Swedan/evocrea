@@ -6,7 +6,7 @@ export function organizationJsonLd() {
     "@type": "Organization",
     name: "EvoCrea",
     url: BASE_URL,
-    logo: `${BASE_URL}/logo.png`,
+    logo: `${BASE_URL}/logo-evocrea.png`,
     sameAs: [
       "https://twitter.com/evocrea_io",
       "https://linkedin.com/company/evocrea",

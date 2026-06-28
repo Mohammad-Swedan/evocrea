@@ -70,18 +70,18 @@ export default function Navbar() {
           <Link
             href={`/${locale}`}
             data-cursor="Home"
-            className="group flex items-center gap-2 focus-visible:outline-accent"
+            className="group flex items-center gap-2.5 focus-visible:outline-accent"
             aria-label="EvoCrea — Home"
           >
             <Image
-              src="/logo-evocrea-without-background.png"
+              src="/mark-evocrea-dark.svg"
               alt="EvoCrea"
-              width={120}
-              height={40}
-              className="h-8 w-auto transition-opacity duration-300 group-hover:opacity-80"
+              width={106}
+              height={120}
+              className="h-10 w-auto transition-opacity duration-300 group-hover:opacity-80"
               priority
             />
-            <span className="text-lg font-semibold tracking-tight text-ink">
+            <span className="text-2xl font-semibold tracking-tight text-ink">
               EvoCrea<span className="text-accent">.</span>
             </span>
           </Link>
